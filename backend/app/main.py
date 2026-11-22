@@ -44,6 +44,21 @@ def event_payload(event: SecurityEvent) -> dict:
     return data
 
 
+def alert_payload(alert: Alert) -> dict:
+    return {
+        "id": alert.id,
+        "event_id": alert.event_id,
+        "title": alert.title,
+        "description": alert.description,
+        "severity": alert.severity,
+        "status": alert.status,
+        "assigned_to": alert.assigned_to,
+        "created_at": alert.created_at,
+        "updated_at": alert.updated_at,
+        "event": event_payload(alert.event),
+    }
+
+
 def create_event(db: Session, payload: dict) -> SecurityEvent:
     scored = score_event(payload)
     event = SecurityEvent(**payload, **scored)
@@ -114,7 +129,7 @@ def list_alerts(status_filter: str | None = Query(default=None, alias="status"),
         query = query.filter(Alert.status == status_filter)
     if severity:
         query = query.filter(Alert.severity == severity)
-    return query.limit(limit).all()
+    return [alert_payload(alert) for alert in query.limit(limit).all()]
 
 
 @app.patch("/api/alerts/{alert_id}", response_model=AlertOut)
@@ -129,7 +144,7 @@ def update_alert(alert_id: int, payload: AlertStatusUpdate, db: Session = Depend
     record_audit(db, user.email, "alert.status_change", f"alert:{alert.id}", f"{old_status} -> {payload.status}")
     db.commit()
     db.refresh(alert)
-    return alert
+    return alert_payload(alert)
 
 
 @app.get("/api/audit")
