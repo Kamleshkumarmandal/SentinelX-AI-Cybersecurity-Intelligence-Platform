@@ -4,6 +4,7 @@ SentinelX is a browser-based security operations dashboard for exploring securit
 
 Project Live:
 https://sentinelx-ai-cybersecurity-intelligence-platform-mys6tea6erq8d.streamlit.app/
+
 **Repository:** [Kamleshkumarmandal/SentinelX-AI-Cybersecurity-Intelligence-Platform](https://github.com/Kamleshkumarmandal/SentinelX-AI-Cybersecurity-Intelligence-Platform)
 
 ## Features
