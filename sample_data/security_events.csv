@@ -1,0 +1,13 @@
+event_time,event_type,source_ip,username,country,failed_attempts,bytes_out,unusual_hour,process_name,details
+2026-11-16T09:20:00,login_success,203.0.113.10,maria,US,0,12000,false,browser,Routine synthetic login
+2026-11-16T10:05:00,login_failure,203.0.113.24,alex,IN,2,0,false,browser,Two failed sign-in attempts
+2026-11-16T10:48:00,login_failure,198.51.100.77,finance-admin,ZZ,14,0,true,browser,Repeated synthetic login failures from an unfamiliar region
+2026-11-16T11:30:00,data_transfer,203.0.113.45,service-account,GB,0,98000000,true,unknown-binary,Synthetic unusually large outbound transfer
+2026-11-17T08:40:00,process_alert,192.0.2.50,workstation-12,US,0,4000,false,unsigned-script,Synthetic process indicator for analyst triage
+2026-11-17T12:15:00,login_success,192.0.2.80,jules,DE,0,20000,false,browser,Routine synthetic login
+2026-11-18T14:10:00,api_access,203.0.113.90,integration,SG,1,60000,false,python-client,Synthetic service API activity
+2026-11-18T23:55:00,login_failure,198.51.100.11,root,RU,9,0,true,unknown,Synthetic high-risk authentication pattern
+2026-11-19T09:30:00,data_transfer,192.0.2.91,analyst,CA,0,250000,false,browser,Routine synthetic download
+2026-11-20T10:20:00,login_success,203.0.113.120,sam,AU,0,18000,false,browser,Routine synthetic login
+2026-11-20T22:45:00,process_alert,198.51.100.37,endpoint-04,FR,1,9000,true,credential-dumper,Synthetic endpoint detection event
+2026-11-21T15:10:00,api_access,192.0.2.17,api-user,US,0,8000,false,service,Routine synthetic API activity
