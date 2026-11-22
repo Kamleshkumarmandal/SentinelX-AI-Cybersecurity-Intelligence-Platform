@@ -58,6 +58,7 @@ Use Python 3.11 or newer.
 
 ```bash
 cd backend
+cp .env.example .env  # edit ADMIN_PASSWORD and SECRET_KEY before starting
 python -m venv .venv
 # macOS/Linux:
 source .venv/bin/activate
