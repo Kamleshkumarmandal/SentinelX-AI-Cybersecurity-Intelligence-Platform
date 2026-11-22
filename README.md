@@ -2,6 +2,8 @@
 
 SentinelX is a browser-based security operations dashboard for exploring security events, detecting suspicious activity, prioritizing alerts, and reviewing explainable risk scores. It combines machine-learning anomaly detection with transparent security rules in a Streamlit application.
 
+Project Live:
+https://sentinelx-ai-cybersecurity-intelligence-platform-mys6tea6erq8d.streamlit.app/
 **Repository:** [Kamleshkumarmandal/SentinelX-AI-Cybersecurity-Intelligence-Platform](https://github.com/Kamleshkumarmandal/SentinelX-AI-Cybersecurity-Intelligence-Platform)
 
 ## Features
