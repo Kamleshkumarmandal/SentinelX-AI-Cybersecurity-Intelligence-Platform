@@ -1,20 +1,19 @@
 # SentinelX — AI Cybersecurity Intelligence Platform
 
-SentinelX is a defensive security-operations project that brings together a React dashboard, FastAPI backend, anomaly detection, and incident triage.
+A defensive security-operations portfolio project combining AI-assisted anomaly scoring, a full-stack SOC dashboard, event analytics, alert triage, and security audit history.
 
-## Project status
+<https://github.com/Kamleshkumarmandal/SentinelX-AI-Cybersecurity-Intelligence-Platform/tree/sentinelx-development>
 
-The application is being developed on the `sentinelx-development` branch. See the project README in that branch for setup and API documentation.
+**Open the [SentinelX development branch](https://github.com/Kamleshkumarmandal/SentinelX-AI-Cybersecurity-Intelligence-Platform/tree/sentinelx-development) for the complete source code, installation guide, Docker setup, tests, architecture notes, and API documentation.**
 
-## Planned capabilities
+The default branch contains this landing page; active application work is isolated on `sentinelx-development`.
 
-- Security event ingestion and validation
-- Explainable anomaly scoring using machine learning and detection rules
-- Alert triage and incident audit history
-- JWT-based authentication and role-aware access
-- Dashboard metrics and synthetic demo telemetry
-- Containerized local development
+## Technology
 
-## Safety and scope
+- React + Vite dashboard
+- FastAPI and SQLAlchemy backend
+- scikit-learn anomaly scoring and explainable rules
+- JWT authentication, analyst roles, alert workflow, audit trail
+- Docker Compose and pytest
 
-This is an educational portfolio MVP. It uses synthetic events for demonstration and does not scan networks, execute uploaded files, or claim to replace a production SIEM/SOC platform. Validate models and controls against an authorized test environment before any operational deployment.
+This is an educational MVP using synthetic telemetry. It is not a production SIEM, and its scores are not proof of compromise.
